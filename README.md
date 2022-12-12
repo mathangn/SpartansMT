@@ -1,7 +1,8 @@
 # SpartansMT
 About your project:
 
-    Now we have some apps like Amazon ,flipkart,and ajio .So they sometimes deliver duplicate items.  For example, let's say Phoenix mall which they have full of brand items. So people can trust me to buy items through my website. 
+    Now we have some apps like Amazon ,flipkart,and ajio .So they sometimes deliver duplicate items.  
+    For example, let's say Phoenix mall which they have full of brand items. So people can trust me to buy items through my website. 
 
 
 Problem statement: https://docs.google.com/document/d/1YLwa8yKuOSpcxANGFA6FnlKSpnsf2mJPSzrixnADBbg/edit?usp=sharing
