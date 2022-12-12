@@ -163,3 +163,7 @@ footer{
 html{
     scroll-behavior: smooth;
 }
+
+#highlighted{
+    border: 1px solid red;
+}

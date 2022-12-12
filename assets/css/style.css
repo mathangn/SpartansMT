@@ -239,11 +239,12 @@ footer{
 #center-stores1{
     overflow: hidden;
     overflow-x: scroll;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-top: 25px;
+    width: 100%;
 
 }
 #center-stores1::-webkit-scrollbar{
@@ -252,10 +253,18 @@ footer{
 #margin-store{
     margin-left: 40px;
 }
+#margin-store1{
+    margin-left: 40px;
+    border: 1px solid red;
+}
 #most-viewed{
     background-color: black;
     color: white;
 }
 html{
     scroll-behavior: smooth;
+}
+
+#highlighted{
+    border: 1px solid red;
 }
