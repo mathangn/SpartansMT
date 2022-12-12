@@ -40,7 +40,6 @@ a{
     width: 500px;
     height: 250px;
     border: 1px solid black;
-
 }
 .view-product{
     display: flex;
@@ -126,6 +125,10 @@ a{
 .offer-img{
     width: 200px;
     height: 100px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 }
 .offer-items div h2,p,h5{
     margin: 0%;
