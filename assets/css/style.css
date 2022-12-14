@@ -253,8 +253,9 @@ footer{
 }
 #margin-store1{
     margin-left: 40px;
-    border: 1px solid red;
-}
+    border: 3px;
+    border-style: groove;
+    border-color: red yellowgreen blue orange;}
 #most-viewed{
     background-color: black;
     color: white;
@@ -264,5 +265,7 @@ html{
 }
 
 #highlighted{
-    border: 1px solid red;
+    border: 3px;
+    border-style: groove;
+    border-color: red yellowgreen blue orange;
 }
