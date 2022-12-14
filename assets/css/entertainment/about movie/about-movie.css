@@ -1,8 +1,10 @@
-body{
+/* body{
+    background-color: rgb(165, 161, 161);
+    background-blend-mode: multiply;
     background-image: url(../../../image/entertainment/avatar-banner.jpg);
     background-size: 100% 600px;
     background-repeat: no-repeat;
-}
+} */
 *{
     font-family: Barlow;
 }
@@ -54,6 +56,11 @@ header div img{
 header{
     display: flex;
     border: 1px solid white;
+    background-color:grey;
+    background-blend-mode: multiply;
+    background-image: url(../../../image/entertainment/avatar-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .about-movie{
     height: 500px;
@@ -97,14 +104,12 @@ header{
     margin: 0%;
 }
 .movie-screen{
-    color: black;
-    background-color: white;
+    color: white;
     margin-bottom: 10px;
     padding: 5px;
 }
 .movie-screen1{
-    color: black;
-    background-color: white;
+    color: white;
     margin-bottom: 50px;
     padding: 5px;
 }
