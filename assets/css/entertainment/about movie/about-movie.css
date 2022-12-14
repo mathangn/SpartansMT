@@ -56,7 +56,7 @@ header div img{
 header{
     display: flex;
     border: 1px solid white;
-    background-color:grey;
+    background-color: gray;
     background-blend-mode: multiply;
     background-image: url(../../../image/entertainment/avatar-banner.jpg);
     background-repeat: no-repeat;
