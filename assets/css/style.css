@@ -91,10 +91,9 @@ a{
 }
 .button{
     padding: 20px;
-    background-color: rgb(253, 0, 84);
+    background-color: violet;
     color: white;
     margin-left: 42%;
-    margin-right: 43%;
     border-radius: 10px;
 }
 .star-rating{
@@ -116,7 +115,6 @@ a{
     background-color: rgb(253, 0, 84);
     color: white;
     margin-left: 41%;
-    margin-right: 42%;
     border-radius: 10px;
 }
 /* Home Movies */
