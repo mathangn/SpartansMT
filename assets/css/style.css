@@ -226,7 +226,7 @@ footer{
     transition: transform .2s;
 }
 .store-black:hover{
-    transform: scale(1.01);
+    transform: scale(1.1);
     box-shadow: 2px 2px 20px 4px black;
 
 }
