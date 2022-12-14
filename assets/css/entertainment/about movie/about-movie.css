@@ -129,6 +129,7 @@ header{
     margin-left: 100px;
     overflow: hidden;
     overflow-x: scroll;
+    margin-right: 140px;
 }
 .cast::-webkit-scrollbar{
     display: none;
