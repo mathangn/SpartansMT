@@ -79,7 +79,8 @@ header{
 }
 .place-order-btn{
     padding: 20px;
-    background-color: greenyellow;
+    background-color: blue;
+    color: white;
     display: inline-block;
     float: right;
     margin-right: 20px;
