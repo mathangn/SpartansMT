@@ -84,3 +84,6 @@ header{
     float: right;
     margin-right: 20px;
 }
+.payment-options-name{
+    font-size: 30px;
+}
