@@ -123,6 +123,12 @@ a{
     font-size: 20px;
 }
 
+#highlighted{
+    border: 3px;
+    border-style: groove;
+    border-color: red yellowgreen blue orange;
+}
+
 /* Footer Starting */
 
 .back-to-top{
