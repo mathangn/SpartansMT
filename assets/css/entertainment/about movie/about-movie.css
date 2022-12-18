@@ -7,11 +7,10 @@
     background-size: 100% 600px;
     background-repeat: no-repeat;
 } */
-*{
-    font-family: Barlow;
-}
+
 body{
     margin: 0%;
+    font-family: 'Barlow', sans-serif;
     /* background-color: black; */
 
 }
@@ -45,6 +44,7 @@ a{
 #signup{
     margin-right: 50px;
 }
+
 /* Nav Finished */
 /* header starting */
 header div img{
@@ -60,7 +60,7 @@ header{
     border: 1px solid white;
     background-color: gray;
     background-blend-mode: multiply;
-    background-image: url(../../../image/entertainment/avatar-banner.jpg);
+    background-image: url(../../../image/entertainment/about-avatar/avatar-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
