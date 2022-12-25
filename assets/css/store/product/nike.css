@@ -85,13 +85,31 @@ h6 {
 }
 
 .productsimg-bag {
-    width: 240px;
+    /* width: 240px; */
     height: 270px;
     margin-top: 10px;
 }
 
 
 /* end */
+
+/* Fashion dress store codes */
+
+.productsimg-fashion-dress{
+    /* width: 140px; */
+    height: 300px;
+    margin-top: 10px;
+}
+.products-items-fashion{
+    width: 320px;
+    height: 560px;
+    text-align: center;
+    border: 1px solid black;
+    transition: transform .2s;
+}
+
+/* End fashion dress store codes */
+
 .cress {
     text-decoration: line-through;
 }
@@ -137,12 +155,13 @@ h4 {
 }
 
 #scroll-box {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: center;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     overflow-x: scroll;
+    padding: 30px;
 }
 
 #scroll-box::-webkit-scrollbar {
@@ -160,7 +179,7 @@ h4 {
 
 .single-box:hover {
     transform: scale(1.01);
-    box-shadow: 2px 2px 20px 4px black;
+    box-shadow: 0px 0px 15px 0px black;
 }
 
 .view-more {
@@ -226,6 +245,7 @@ footer {
 
 .footer-h3 {
     color: white;
+    padding: 5px;
 }
 
 html {
@@ -237,3 +257,42 @@ html {
     border-style: groove;
     border-color: red yellowgreen blue orange;
 }
+
+/* Mobile phones page starting */
+/* ivenus */
+
+.mobile-brands{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+.mobile-brands-img{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.mobile-brands img{
+    width: 100px;
+    /* height: 100px; */
+    margin-top: 10px;
+}
+
+/* Moblie phones apple for ivenus store */
+
+.mobile-brands-apple{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+#apple-mobile-banner{
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.mobile-brands-apple img{
+    height: 100px;
+    margin-top: 10px;
+}
+/* Mobile phones page ending */
