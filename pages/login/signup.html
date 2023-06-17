@@ -1,63 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../assets/css/login/signup.css">
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-        <title>SpartansMT</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/image/home/logo icon.png" alt="logo icon">
-    </head>
-    <body>
 
-        <p id="signin">Already have an account? <a href="../../pages/login/login.html">Sign in here!</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/login/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>SpartansMT</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/image/home/logo icon.png" alt="logo icon">
+</head>
 
+<body>
 
-        <header>
+    <p id="signin">
+Already have an account? <a href="../../pages/login/login.html">Sign in here!</a>
+</p>
 
-            
-            <div class="container">
+    <form id="signup_form">
 
-                <div>
-                    <img id="sign-img" src="../../assets/image/signup/signup-img.png" alt="signup img">
+        <div class="container">
+
+            <div>
+                <img id="sign-img" src="../../assets/image/signup/signup-img.png" alt="signup img">
+            </div>
+            <div>
+                <h1>Create An Account</h1>
+                <div class="box-column">
+                    <label>
+First Name<br>
+<input type="text" id="firstname" name="first-name" class="input"
+                        pattern="[A-Za-z]{1,20}" required="true"></label>
+                    <label>
+Last Name<br>
+<input type="text" id="lastname" name="Last-name" class="input"
+                        pattern="[a-zA-Z]{1,20}" required="true"></label>
                 </div>
-                <div>
-                    <h1>Create An Account</h1>
-                    <div class="box-column">
-                        <label>First Name<br><input type="text" name="first-name" class="input"></label>
-                        <label>Last Name<br><input type="text" name="Last-name" class="input"></label>
-                    </div>
 
-                    <div class="box-column">
-                        <label>Email<br><input type="email" required name="email" class="input"></label>
-                        <label>Address<br><input type="text" required name="address" class="input"></label>
-                    </div>
+                <div class="box-column">
+                    <label>
+Email<br>
+<input type="email" id="email" required="true" name="email" class="input"
+                            pattern="^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"></label>
+                    <label>
+Phone number<br>
+<input type="tel" pattern="[789][0-9]{9}" id="address" required="true" name="address"
+                            class="input"></label>
+                </div>
 
-                    <div class="box-column">
-                        <label>Create Password<br><input type="password" required name="create password" class="input"></label>
-                        <label>Confirm Password<br><input type="password" required name="confirm password" class="input"></label>
-                    </div>
-                    <label><input type="checkbox" name="checkbox" id="checkbox">Creating your account and you accepting <b>Terms & Conditions.</b></label>
-                    <br>
-                    <a href="../login/login.html"><p class="create-ac-btn"><b>Create Account</b></p></a>
+                <div class="box-column">
+                    <label>Create Password
+                        <br>
+                        <input id="creatpassword" type="password" name="create password" class="input" required="true" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
+                    </label>
+                    <label>Confirm Password
+                        <br>
+                        <input id="confirmpassword" type="password" required="true" name="confirm password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" class="input">
+                    </label>
+                </div>
+                <label>
+<input type="checkbox" name="checkbox" id="checkbox">Creating your account and you
+                    accepting<b>Terms & Conditions.</b>
+</label>
+                <br>
+                <button type="submit" class="create-ac-btn">
+<b>Create Account</b>
+</button>
 
-                    <div class="box-column">
-                        <div class="icons-alignment">
-                            <img class="icon" src="../../assets/image/home/facebook.png" alt="facebook icon"><p><b>Sign up Using Facebook!</b></p>
-                        </div>
-                        <div class="icons-alignment">
-                            <img class="icon" src="../../assets/image/home/twitter-sign.png" alt="icon"><p><b>Sign up Using Twitter!</b></p>
-                        </div>
+                <div class="box-column">
+                    <div class="icons-alignment">
+                        <img class="icon" src="../../assets/image/home/facebook.png" alt="facebook icon">
+                        <p>
+<b>Sign up Using Facebook!</b>
+</p>
                     </div>
-                   
+                    <div class="icons-alignment">
+                        <img class="icon" src="../../assets/image/home/twitter-sign.png" alt="icon">
+                        <p>
+<b>Sign up Using Twitter!</b>
+</p>
+                    </div>
                 </div>
 
             </div>
 
-        </header>
+        </div>
+    </form>
 
+    <script>        const form = document.getElementById("signup_form");
+        form.onsubmit = function signup(e) {
 
-        
-    </body>
+            e.preventDefault()
+
+            const first_name = document.getElementById("firstname").value.trim();
+            const last_name = document.getElementById("lastname").value.trim();
+            const user_email = document.getElementById("email").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const creatpassword = document.getElementById("creatpassword").value.trim();
+            const confirm_password = document.getElementById("confirmpassword").value.trim();
+            const address2 = "";
+            const zip_code = "";
+            const country = "";
+            const state = "";
+
+            if (first_name !== "" && last_name !== "" && user_email !== "" && address !== "" && creatpassword !== "" && confirm_password !== "") {
+
+                if (creatpassword === confirm_password) {
+
+                    const User_details = JSON.parse(localStorage.getItem('arr')) ?? [];
+
+                    let check = 0;
+
+                    User_details.find(element => {
+
+                        if (element.user_email === user_email) {
+
+                            return check = 1;
+                        }
+                        
+                            check = 0;
+
+                        return element;
+                
+                    });
+
+                    if (check === 1) {
+                        alert("Email is already exits")
+                    }
+                    else {
+
+                        const user = {};
+
+                        user.first_name = first_name;
+                        user.last_name = last_name;
+                        user.user_email = user_email;
+                        user.mobile_number = address;
+                        user.creatpassword = creatpassword;
+                        user.confirm_password = confirm_password;
+                        user.address = address2;
+                        user.zip_code = zip_code;
+                        user.country = country;
+                        user.state = state;
+
+                        User_details.push(user);
+                        localStorage.setItem("arr", JSON.stringify(User_details));
+                        window.location.href = "login.html?id=signup"
+
+                    }
+
+                }
+                else {
+                    alert("Your password is not matched")
+                }
+            }
+            else {
+                alert("Field can't be empty")
+            }
+        }
+    </script>
+
+</body>
+
 </html>

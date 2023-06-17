@@ -58,8 +58,8 @@ body{
 .icons-alignment b{
     color: white;
 }
+
 #signin{
-    width: 100%;
     display: flex;
     margin-top: 40px;
     margin-left: 1150px;    
@@ -67,4 +67,14 @@ body{
 
 a{
     text-decoration: none;
+}
+input{
+    border: 2px solid black;
+}
+
+input:valid{
+border: 2px solid green;
+}
+input:invalid{
+    border: 2px solid red;
 }
