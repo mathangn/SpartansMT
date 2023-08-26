@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Home Page Title -->
+    <title>SpartansMT Admin</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../../assets/css/admin/admin_home.css">
+
+    <!-- Title Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/image/home/logo icon.png" alt="logo icon">
+
+    <!-- Google Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <nav>
+
+        <div id="logo">
+            <img src="../../assets/image/home/logo.png" alt="">
+        </div>
+
+        <div class="nav">
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                <input id="search" type="search" placeholder="Search...">
+            </div>
+
+            <div>
+                <span id="profile">Profile</span>
+                <a href="../login/login.html">
+                    <i class="fa-solid fa-right-from-bracket logout"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header>
+
+        <ul>
+
+            <span class="menu">MENU</span>
+
+            <a href="admin_home.html?id=dashboard">
+                <menu>Dashboard</menu>
+            </a>
+
+            <a href="admin_home.html?id=store_form">
+                <menu>Forms</menu>
+            </a>
+
+            <a href="admin_table.html">
+                <menu>Tables</menu>
+            </a>
+
+        </ul>
+
+        <div class="tables">
+
+            <div class="dash_align">
+
+                <h4>PRODUCT DETAILS</h4>
+                <div>
+                    <span>SpartansMT</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="../admin/admin_table.html"><span class="menu">Store Details</span></a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span class="menu">Product Details</span>
+
+                    <button id="table_add_product" onclick="addbox()">Add Product</button>
+
+                </div>
+
+            </div>
+
+            <div class="store_table">
+
+                <table class="table">
+
+                    <tr>
+                        <th class="td">Image</th>
+                        <th class="td">Title</th>
+                        <th class="td">Price</th>
+                        <th class="td">Edit Product Details</th>
+                        <th class="td">Delete Products</th>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike10.jpeg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike1.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike7.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike2.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike12.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike3.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike4.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td"><img class="product_img" src="../../assets/image/stores/items/nike5.jpg"
+                                alt="Product Image"></td>
+                        <td class="td">Mens Air Zoom Vomero 15 Running Shoe</td>
+                        <td class="td">6000</td>
+                        <td class="td"><button class="btn_edit_store" onclick="updatebox()">Edit</button></td>
+                        <td class="td"><button class="btn_view_store">Delete</button></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <div id="product_update_box">
+
+            <form id="product_form">
+
+                <h3 class="center" id="product_header">Update Product Details</h3>
+
+                <table>
+
+                    <tr>
+                        <th class="label">Labels</th>
+                        <th class="inputs">Inputs</th>
+                    </tr>
+
+
+                    <tr>
+                        <td class="label">Title :</td>
+                        <td class="inputs">
+                            <input type="text" id="product_title" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Price :</td>
+                        <td class="inputs">
+                            <input type="number" id="price" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Product URL Link :</td>
+                        <td class="inputs">
+                            <input type="url" id="product_image" required>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="btns">
+
+                    <button id="add_product_btn" type="submit">Add Product</button>
+                    <button id="update_btn" type="submit">Update Product</button>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+    <script>
+
+
+        function updatebox() {
+            document.querySelector("#product_update_box").style.display = "block";
+            document.querySelector("#update_btn").style.display = "block";
+            document.querySelector("#add_product_btn").style.display = "none";
+            document.getElementById("product_header").innerText = "Update Product Details";
+        }
+
+        function addbox() {
+            document.querySelector("#product_update_box").style.display = "block";
+            document.querySelector("#update_btn").style.display = "none";
+            document.querySelector("#add_product_btn").style.display = "block";
+            document.getElementById("product_header").innerText = "Add Product Details";
+        }
+
+    </script>
+
+</body>
+
+</html>
